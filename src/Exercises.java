@@ -30,8 +30,7 @@ public class Exercises {
 		}
 
 		return combined;
-		
-		return null;	// default return value to ensure compilation
+
 	}
 	
 	public int difference(ArrayList<Integer> numbers) {
