@@ -109,7 +109,7 @@ public class Exercises {
 			if (i + 2 < numbers.size()) {
 				lowest = numbers.get(i);
 				middle = numbers.get(i+1);
-				last = numbers.get(i=2);
+				last = numbers.get(i+2);
 			} else {
 				return false;
 		}
