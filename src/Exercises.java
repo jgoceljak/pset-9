@@ -6,6 +6,9 @@ public class Exercises {
 		if (a == null || a.isEmpty() || b == null || b.isEmpty()) {
 			return false;
 		}
+		if (a.get(0) == b.get(0) || a.get(a.size() - 1) == b.get(b.size() - 1)) {
+			return true;
+		}
 		
 		// write your code here
 		
@@ -13,7 +16,20 @@ public class Exercises {
 	}
 	
 	public ArrayList<String> endsMeet(ArrayList<String> values, int n) {
-		// write your code here
+		if (values == null || values.size() < n || n <= 0) {
+			return new ArrayList<String>();
+		}
+
+		ArrayList<String> combined = new ArrayList<String>();
+		for (int i = 0; i < n; i++) {
+			combined.add(values.get(i));
+		}
+
+		for (int i = values.size() - n; i < values.size(); i++) {
+			combined.add(values.get(i));
+		}
+
+		return combined;
 		
 		return null;	// default return value to ensure compilation
 	}
