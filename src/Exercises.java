@@ -96,7 +96,9 @@ public class Exercises {
 	}
 
 	public boolean increasing(ArrayList<Integer> numbers) {
-		// write your code here
+		if (numbers == null || numbers.size() < 3) {
+			return false;
+		}
 		
 		return false;	// default return value to ensure compilation
 	}
