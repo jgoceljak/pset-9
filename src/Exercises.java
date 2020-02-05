@@ -55,9 +55,23 @@ public class Exercises {
 	}
 	
 	public double biggest(ArrayList<Double> numbers) {
-		// write your code here
+		if (numbers == null || numbers.size() < 3 || numbers.size() % 2 == 0) {
+			return -1;
+		}
+
+		int middle = (int)(Math.ceil(numbers.size() / 2));
+		double max = -1;
+		for (int i = 0; i < numbers.size(); i++) {
+			if (numbers.get(i) < 0) {
+					return -1;
+				}
+				if ((i == 0 || i == numbers.size() - 1 || i == middle) && numbers.get(i) > max) {
+					max = numbers.get(i);
+				}
+			}
+
+		return max;
 		
-		return -1;		// default return value to ensure compilation
 	}
 	
 	public ArrayList<String> middle(ArrayList<String> values) {
