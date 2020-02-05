@@ -149,7 +149,14 @@ public class Exercises {
 		}
 		boolean isConsecutive = false;
 		
-		return false;	// default return value to ensure compilation
+		for (int i = 2; i < numbers.size(); i++) {
+			if (numbers.get(i) % 2 == numbers.get(i-1) % 2 && numbers.get(i) % 2 == numbers.get(i-2) % 2) {
+				isConsecutive = true;
+			}
+		}
+
+		return isConsecutive;
+		
 	}
 	
 	public boolean balance(ArrayList<Integer> numbers) {
