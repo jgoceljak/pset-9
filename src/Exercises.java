@@ -114,7 +114,7 @@ public class Exercises {
 				return false;
 		}
 		}
-		return false;	// default return value to ensure compilation
+		return false;	
 	}
 	
 	public boolean everywhere(ArrayList<Integer> numbers, int x) {
@@ -177,7 +177,7 @@ public class Exercises {
 			}
 		}
 		
-		return false;	// default return value to ensure compilation
+		return false;	
 	}
 	
 	public int clumps(ArrayList<String> values) {
